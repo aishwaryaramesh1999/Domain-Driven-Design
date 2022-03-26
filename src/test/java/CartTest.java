@@ -9,7 +9,7 @@ class CartTest {
     @Test
     void addIPadProToCart() {
         Cart cart = new Cart();
-        Product product = new Product("IPad Pro", 25.0);
+        Product product = new Product("IPad Pro", 25);
         Item item = new Item(product, 1);
 
         boolean isItemAdded = cart.addItem(item);
@@ -20,7 +20,7 @@ class CartTest {
     @Test
     void addHeroInkPenToCart() {
         Cart cart = new Cart();
-        Product product = new Product("Hero Ink Pen", 26.0);
+        Product product = new Product("Hero Ink Pen", 26);
         Item item = new Item(product, 1);
 
         boolean isItemAdded = cart.addItem(item);
@@ -31,7 +31,7 @@ class CartTest {
     @Test
     void addGmCricketBatToCart() {
         Cart cart = new Cart();
-        Product product = new Product("GM Cricket Bat", 30.0);
+        Product product = new Product("GM Cricket Bat", 30);
         Item item = new Item(product, 2);
 
         boolean isItemAdded = cart.addItem(item);
@@ -42,7 +42,7 @@ class CartTest {
     @Test
     void removeIpadPro() {
         Cart cart = new Cart();
-        Product product = new Product("Ipad Pro", 25.0);
+        Product product = new Product("Ipad Pro", 25);
         Item item = new Item(product, 1);
 
         cart.addItem(item);
@@ -54,8 +54,8 @@ class CartTest {
     @Test
     void getListOfDeletedItems() {
         Cart cart = new Cart();
-        Product product1 = new Product("Ipad Pro", 25.0);
-        Product product2 = new Product("Cricket Bat", 30.0);
+        Product product1 = new Product("Ipad Pro", 25);
+        Product product2 = new Product("Cricket Bat", 30);
         Item item1 = new Item(product1, 1);
         Item item2 = new Item(product2, 1);
 
@@ -71,11 +71,11 @@ class CartTest {
     @Test
     void differentiateCart() {
         Cart cart1 = new Cart();
-        Product product1 = new Product("IPad Pro", 25.0);
+        Product product1 = new Product("IPad Pro", 2);
         Item item1 = new Item(product1, 1);
 
         Cart cart2 = new Cart();
-        Product product2 = new Product("IPad Pro", 25.0);
+        Product product2 = new Product("IPad Pro", 25);
         Item item2 = new Item(product2, 1);
 
         cart1.addItem(item1);
@@ -87,7 +87,7 @@ class CartTest {
     @Test
     void checkItemIsPresentOrNot() {
         Cart cart = new Cart();
-        Product product = new Product("Ipad Pro", 25.0);
+        Product product = new Product("Ipad Pro", 25);
         Item item = new Item(product, 1);
 
         cart.addItem(item);

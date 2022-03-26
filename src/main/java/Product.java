@@ -1,8 +1,8 @@
 public class Product {
     private String productName;
-    private Double productPrice;
+    private Integer productPrice;
 
-    public Product(String productName, Double productPrice) {
+    public Product(String productName, Integer productPrice) {
 
         this.productName = productName;
         this.productPrice = productPrice;
@@ -12,7 +12,7 @@ public class Product {
         return productName;
     }
 
-    public Double getProductPrice() {
+    public Integer getProductPrice() {
         return productPrice;
     }
 }
